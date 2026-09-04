@@ -2,7 +2,7 @@
   "expo": {
     "name": "Bossclips",
     "slug": "bossclips",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -27,7 +27,17 @@
         "backgroundColor": "#09090B"
       }
     },
-    "plugins": ["expo-video"],
-    "assetBundlePatterns": ["**/*"]
+    "plugins": [
+      "expo-video",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Bossclips accesses your photo library so you can select videos to upload."
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }
